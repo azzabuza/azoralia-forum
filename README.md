@@ -14,7 +14,7 @@ Ini adalah aplikasi forum diskusi berbasis web yang menggunakan **Firebase Realt
   - **Firebase Authentication**: Mengautentikasi pengguna.
   - **Firebase Realtime Database**: Menyimpan thread yang dikirimkan pengguna.
 
-## Prasyarat
+## Persyaratan
 Sebelum memulai instalasi, pastikan kamu sudah memiliki:
 - Akun **Firebase** dan sudah membuat **Firebase Project**.
 - File **Firebase Config** (berisi `apiKey`, `authDomain`, `projectId`, dll.) yang akan digunakan dalam aplikasi.
