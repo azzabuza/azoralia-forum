@@ -6,7 +6,7 @@ Ini adalah aplikasi forum diskusi berbasis web yang menggunakan **Firebase Realt
 - Pengguna dapat memposting thread baru.
 - Pesan akan otomatis tersimpan di Firebase Realtime Database.
 - Semua thread yang sudah diposting akan ditampilkan dalam forum secara real-time.
-  
+
 ## Teknologi yang Digunakan
 - **HTML5, CSS3**: Struktur dan tampilan antarmuka aplikasi.
 - **JavaScript (ES6+)**: Logika aplikasi dan interaksi dengan Firebase.
@@ -15,7 +15,7 @@ Ini adalah aplikasi forum diskusi berbasis web yang menggunakan **Firebase Realt
   - **Firebase Realtime Database**: Menyimpan thread yang dikirimkan pengguna.
 
 ## Prasyarat
-Sebelum memulai instalasi, pastikan kamu sudah memiliki:
+Sebelum memulai instalasi, pastikan Anda sudah memiliki:
 - Akun **Firebase** dan sudah membuat **Firebase Project**.
 - File **Firebase Config** (berisi `apiKey`, `authDomain`, `projectId`, dll.) yang akan digunakan dalam aplikasi.
 
@@ -33,26 +33,26 @@ Sebelum memulai instalasi, pastikan kamu sudah memiliki:
    - Aktifkan **Firebase Authentication** dengan metode login menggunakan akun **Google**.
    - Aktifkan **Realtime Database** dengan mode **Test Mode** untuk kemudahan pengembangan awal.
    - Salin konfigurasi Firebase yang berisi informasi seperti `apiKey`, `authDomain`, dan lainnya.
-  
-2. **File Database**
-   - Upload file `db-firebase.json` ke Realtime Database
 
-3. **Rules Database**
-   - Ubah rules database agar pengguna dapat melakukan chatting
+3. **Upload File Database**
+   Upload file `db-firebase.json` ke Realtime Database untuk inisialisasi data awal.
+
+4. **Atur Rules Database**
+   Ubah aturan database agar pengguna dapat mengirim thread:
+     ```json
+     {
+       "rules": {
+         ".read": true,
+         "forums": {
+           ".write": "auth != null"
+         }
+       }
+     }
      ```
-    {
-    "rules": {
-      ".read": true,
-        "forums": {
-          ".write": "auth != null"
-        }
-      }
-    }
-```
 
-4. **Konfigurasi Firebase**
+5. **Konfigurasi Firebase**
    - Buka file `index.html`.
-   - Pada bagian `firebaseConfig`, masukkan konfigurasi Firebase kamu:
+   - Pada bagian `firebaseConfig`, masukkan konfigurasi Firebase Anda:
      ```javascript
      const firebaseConfig = {
          apiKey: "your-api-key",
@@ -62,12 +62,13 @@ Sebelum memulai instalasi, pastikan kamu sudah memiliki:
      };
      ```
 
-5. **Jalankan Aplikasi**
+6. **Jalankan Aplikasi**
    - Untuk menjalankan aplikasi secara lokal, cukup buka file `index.html` di browser.
-   - kamu bisa menggunakan **Live Server** di Visual Studio Code atau langsung membuka file tersebut dengan klik dua kali.
+   - Anda bisa menggunakan **Live Server** di Visual Studio Code atau langsung membuka file tersebut dengan klik dua kali.
 
-6. **Deploy ke Hosting**
-   - kamu bisa menggunakan platform hosting seperti **Netlify** atau **Vercel** untuk mendepoy aplikasi ini.
+7. **Deploy ke Hosting**
+   Anda bisa menggunakan platform hosting seperti **Netlify** atau **Vercel** untuk mendepoy aplikasi ini.
+   
 ## Struktur Direktori
 
 ```
@@ -78,7 +79,7 @@ Sebelum memulai instalasi, pastikan kamu sudah memiliki:
 ```
 
 ## Kontribusi
-Jika kamu ingin berkontribusi dalam pengembangan proyek ini, silakan fork repositori dan kirimkan pull request. Kami menerima kontribusi berupa penambahan fitur, perbaikan bug, atau peningkatan performa.
+Jika Anda ingin berkontribusi dalam pengembangan proyek ini, silakan fork repositori dan kirimkan pull request. Kami menerima kontribusi berupa penambahan fitur, perbaikan bug, atau peningkatan performa.
 
 ## Lisensi
 Aplikasi ini dirilis di bawah lisensi MIT. Silakan lihat file `LICENSE` untuk informasi lebih lanjut.
