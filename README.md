@@ -33,8 +33,24 @@ Sebelum memulai instalasi, pastikan kamu sudah memiliki:
    - Aktifkan **Firebase Authentication** dengan metode login menggunakan akun **Google**.
    - Aktifkan **Realtime Database** dengan mode **Test Mode** untuk kemudahan pengembangan awal.
    - Salin konfigurasi Firebase yang berisi informasi seperti `apiKey`, `authDomain`, dan lainnya.
+  
+2. **File Database**
+   - Upload file `db-firebase.json` ke Realtime Database
 
-3. **Konfigurasi Firebase**
+3. **Rules Database**
+   - Ubah rules database agar pengguna dapat melakukan chatting
+     ``` rules
+    {
+    "rules": {
+      ".read": true,
+        "forums": {
+          ".write": "auth != null"
+        }
+      }
+    }
+```
+
+4. **Konfigurasi Firebase**
    - Buka file `index.html`.
    - Pada bagian `firebaseConfig`, masukkan konfigurasi Firebase kamu:
      ```javascript
@@ -46,11 +62,11 @@ Sebelum memulai instalasi, pastikan kamu sudah memiliki:
      };
      ```
 
-4. **Jalankan Aplikasi**
+5. **Jalankan Aplikasi**
    - Untuk menjalankan aplikasi secara lokal, cukup buka file `index.html` di browser.
    - kamu bisa menggunakan **Live Server** di Visual Studio Code atau langsung membuka file tersebut dengan klik dua kali.
 
-5. **Deploy ke Hosting**
+6. **Deploy ke Hosting**
    - kamu bisa menggunakan platform hosting seperti **Netlify** atau **Vercel** untuk mendepoy aplikasi ini.
 ## Struktur Direktori
 
