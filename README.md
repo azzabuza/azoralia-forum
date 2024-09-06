@@ -43,11 +43,3 @@ To set up Firebase for this application, follow these steps:
 4. **Get Firebase configuration**:
    - Go to your Firebase project settings.
    - Under "Your apps" section, add a web app and copy the Firebase configuration details.
-
-## Installation
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/yourusername/web-forum-app.git
-cd web-forum-app
