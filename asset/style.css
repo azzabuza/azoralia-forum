@@ -314,7 +314,7 @@ margin:0;
 #send-button svg.line, #send-button svg .line{
 stroke:#ffffff;
 }
-#logout{
+#logout, #origin{
 box-sizing:border-box;
 position:fixed;
 z-index:3;
@@ -329,16 +329,5 @@ left:0;
 border-radius:0 25px 25px 0;
 }
 #origin{
-box-sizing:border-box;
-position:fixed;
-z-index:3;
-background:#ffffff;
-margin:0;
-padding:10px;
-cursor:pointer;
-border:none;
-box-shadow:0 0 10px rgb(0 0 0 / 10%);
 top:90px;
-left:0;
-border-radius:0 25px 25px 0;
 }
