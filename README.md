@@ -35,9 +35,11 @@ Sebelum memulai instalasi, pastikan Anda sudah memiliki:
    - Salin konfigurasi Firebase yang berisi informasi seperti `apiKey`, `authDomain`, dan lainnya.
 
 3. **Upload File Database**
+
    Upload file `db-firebase.json` ke Realtime Database untuk inisialisasi data awal.
 
-4. **Atur Rules Database**
+5. **Atur Rules Database**
+
    Ubah aturan database agar pengguna dapat mengirim thread:
      ```json
      {
@@ -50,7 +52,7 @@ Sebelum memulai instalasi, pastikan Anda sudah memiliki:
      }
      ```
 
-5. **Konfigurasi Firebase**
+7. **Konfigurasi Firebase**
    - Buka file `index.html`.
    - Pada bagian `firebaseConfig`, masukkan konfigurasi Firebase Anda:
      ```javascript
@@ -62,11 +64,12 @@ Sebelum memulai instalasi, pastikan Anda sudah memiliki:
      };
      ```
 
-6. **Jalankan Aplikasi**
+8. **Jalankan Aplikasi**
    - Untuk menjalankan aplikasi secara lokal, cukup buka file `index.html` di browser.
    - Anda bisa menggunakan **Live Server** di Visual Studio Code atau langsung membuka file tersebut dengan klik dua kali.
 
-7. **Deploy ke Hosting**
+9. **Deploy ke Hosting**
+
    Anda bisa menggunakan platform hosting seperti **Netlify** atau **Vercel** untuk mendepoy aplikasi ini.
    
 ## Struktur Direktori
