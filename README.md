@@ -52,24 +52,6 @@ Sebelum memulai instalasi, pastikan Anda sudah memiliki:
 
 5. **Deploy ke Hosting**
    - Anda bisa menggunakan platform hosting seperti **Netlify** atau **Vercel** untuk mendepoy aplikasi ini.
-   - Jika menggunakan **Firebase Hosting**, lakukan langkah berikut:
-     - Instal **Firebase CLI**:
-       ```bash
-       npm install -g firebase-tools
-       ```
-     - Login ke akun Firebase:
-       ```bash
-       firebase login
-       ```
-     - Inisialisasi Firebase Hosting:
-       ```bash
-       firebase init
-       ```
-     - Deploy aplikasi:
-       ```bash
-       firebase deploy
-       ```
-
 ## Struktur Direktori
 
 ```
