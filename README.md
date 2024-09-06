@@ -15,7 +15,7 @@ Ini adalah aplikasi forum diskusi berbasis web yang menggunakan **Firebase Realt
   - **Firebase Realtime Database**: Menyimpan thread yang dikirimkan pengguna.
 
 ## Prasyarat
-Sebelum memulai instalasi, pastikan Anda sudah memiliki:
+Sebelum memulai instalasi, pastikan kamu sudah memiliki:
 - Akun **Firebase** dan sudah membuat **Firebase Project**.
 - File **Firebase Config** (berisi `apiKey`, `authDomain`, `projectId`, dll.) yang akan digunakan dalam aplikasi.
 
@@ -36,7 +36,7 @@ Sebelum memulai instalasi, pastikan Anda sudah memiliki:
 
 3. **Konfigurasi Firebase**
    - Buka file `index.html`.
-   - Pada bagian `firebaseConfig`, masukkan konfigurasi Firebase Anda:
+   - Pada bagian `firebaseConfig`, masukkan konfigurasi Firebase kamu:
      ```javascript
      const firebaseConfig = {
          apiKey: "your-api-key",
@@ -48,10 +48,10 @@ Sebelum memulai instalasi, pastikan Anda sudah memiliki:
 
 4. **Jalankan Aplikasi**
    - Untuk menjalankan aplikasi secara lokal, cukup buka file `index.html` di browser.
-   - Anda bisa menggunakan **Live Server** di Visual Studio Code atau langsung membuka file tersebut dengan klik dua kali.
+   - kamu bisa menggunakan **Live Server** di Visual Studio Code atau langsung membuka file tersebut dengan klik dua kali.
 
 5. **Deploy ke Hosting**
-   - Anda bisa menggunakan platform hosting seperti **Netlify** atau **Vercel** untuk mendepoy aplikasi ini.
+   - kamu bisa menggunakan platform hosting seperti **Netlify** atau **Vercel** untuk mendepoy aplikasi ini.
 ## Struktur Direktori
 
 ```
@@ -62,7 +62,7 @@ Sebelum memulai instalasi, pastikan Anda sudah memiliki:
 ```
 
 ## Kontribusi
-Jika Anda ingin berkontribusi dalam pengembangan proyek ini, silakan fork repositori dan kirimkan pull request. Kami menerima kontribusi berupa penambahan fitur, perbaikan bug, atau peningkatan performa.
+Jika kamu ingin berkontribusi dalam pengembangan proyek ini, silakan fork repositori dan kirimkan pull request. Kami menerima kontribusi berupa penambahan fitur, perbaikan bug, atau peningkatan performa.
 
 ## Lisensi
 Aplikasi ini dirilis di bawah lisensi MIT. Silakan lihat file `LICENSE` untuk informasi lebih lanjut.
