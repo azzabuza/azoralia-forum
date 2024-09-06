@@ -1,4 +1,4 @@
-# Forum Diskusi Berbasis Web
+# Forum Diskusi Sederhana Berbasis Web
 
 Ini adalah aplikasi forum diskusi berbasis web yang menggunakan **Firebase Realtime Database** untuk menyimpan dan menampilkan pesan dalam forum. Aplikasi ini memungkinkan pengguna untuk memposting thread diskusi dan menampilkan semua thread yang ada di halaman forum.
 
