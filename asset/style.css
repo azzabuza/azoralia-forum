@@ -280,7 +280,7 @@ flex:1;
 max-width:100%;
 height:45px;
 outline:none;
-border-radius:5px;
+border-radius:25px;
 border:1px solid #dcdcdc;
 resize:none;
 overflow:hidden;
@@ -305,7 +305,7 @@ width:45px;
 height:45px;
 outline:none;
 border:none;
-border-radius:5px;
+border-radius:50%;
 }
 #send-button svg{
 fill:#ffffff;
