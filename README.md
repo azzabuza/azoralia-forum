@@ -23,8 +23,8 @@ Sebelum memulai instalasi, pastikan Anda sudah memiliki:
 
 1. **Kloning Repositori**
    ```bash
-   git clone https://github.com/username/repo-forum-web.git
-   cd repo-forum-web
+   git clone https://github.com/azzabuza/azoralia-forum.git
+   cd azoralia-forum
    ```
 
 2. **Inisialisasi Firebase Project**
