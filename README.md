@@ -39,7 +39,7 @@ Sebelum memulai instalasi, pastikan kamu sudah memiliki:
 
 3. **Rules Database**
    - Ubah rules database agar pengguna dapat melakukan chatting
-     ``` rules
+     ```
     {
     "rules": {
       ".read": true,
